@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!-- this does not work as it just adds a group
+        <menuitem name="Recruitment" id="base.menu_crm_case_job_req_main" parent="hr.menu_hr_root" groups="base.group_hr_manager"/>
+ -->
+        <record model="ir.ui.menu" id="base.menu_crm_case_job_req_main">
+            <field name="groups_id" eval="[(6,0,[ref('base.group_hr_manager')])]"/>
+        </record>
+    </data>
+</openerp>
